@@ -1,0 +1,267 @@
+body{
+    background: #D2691E;
+}
+
+
+#table {
+    font-family: century gothic;
+    /*padding: 10px;*/
+    margin: auto;
+    width: 80%;
+    min-width: 960px;
+}
+
+div {
+    padding: 10px;
+
+}
+
+#header{
+    background: white;
+    height: 200px;
+    width: 99%;
+
+}
+
+#content{
+    text-align: justify;
+    background: #FAF0E6;
+    width: 99%;
+    margin: 0;
+    overflow: hidden;
+}
+
+#osn-text{
+    margin: 0;
+    float:left;
+    width: 65%;
+    min-height: 300px;
+}
+
+#bottom{
+    clear: both;
+    background: khaki;
+    width: 99%;
+}
+
+#logo img{
+    float: left;
+    width: 18%;
+}
+#picture img{
+    float: right;
+    width: 70%
+
+}
+#picture{
+    position: absolute;
+    top: 50px;
+    right: 140px;
+    padding: 0px;
+    z-index: 0;
+    width: 500px;
+}
+#nazvanie {
+    width: 65%;
+    position: relative;
+    top: 15px;
+    right: -40px;
+    z-index: 1;
+}
+
+#head-menu{
+    position: relative;
+    top: -20px;
+    right: -15px;    
+    z-index: 1;
+
+}
+
+#menu-bottom {
+    position: relative;
+    right: -185px;
+}
+#head-menu #menu-bottom{
+    display: inline-block;
+    text-align: center;
+    margin: 0 auto;
+    background: #FAF0E6;
+    height: 20px;
+    width: 50%;
+    vertical-align: middle;
+}
+
+#head-menu ul > li {
+    display: inline-block;
+    vertical-align: middle;
+
+}
+
+#head-menu li {
+    display: inline-block;
+    position: relative;
+    bottom: -0.9em;
+    transition: bottom 0.2s ease;
+    vertical-align: middle;
+}
+
+#head-menu li:hover {
+    transition: bottom 0.2s ease;
+    margin-top: 1.5em 1em;
+    text-align: center;
+    vertical-align: middle;
+
+
+}
+
+
+
+#head-menu a {
+    display: inline;
+    height: 50px;
+    background: #FAF0E6;
+    text-decoration: none;
+    padding: 1em;
+    transition: background 0.2s ease;
+    vertical-align: middle;
+
+}
+
+#head-menu a:hover {  
+    display: inline;
+    padding:  1.5em 1em 1em 1em;
+    background: bisque;
+    color: #8B658B; 
+    transition: background 0.2s ease;
+    vertical-align: middle;
+
+}
+#head-menu a.active{
+    display: inline;
+    padding:  1.5em 1em 1em 1em;
+    background: #F4A460;
+    color: #8B658B; 
+    transition: background 0.2s ease;
+    vertical-align: middle;
+
+}
+
+
+
+A:link { 
+    text-decoration: none; 
+    color: #8B5742; 
+} 
+A:visited { 
+    text-decoration: none; 
+    color: #8B5742; 
+} 
+
+
+#news, #spisok-news, #admin{
+    float: right;
+    width: 30%;
+}
+
+#news, #admin{
+    /*    position: relative;
+        top: -150px;
+        left: -120px;
+        float: top;*/
+    text-align: center;
+    font-weight: bold;
+} 
+
+
+#bottom {
+    background: white;
+
+}
+
+li{
+    list-style-type: none;
+}
+
+
+
+#menu-bottom ul > li {
+    display: inline;
+
+}
+
+#menu-bottom li {
+    display: inline;
+    position: relative;
+    bottom: -0.9em;
+    transition: bottom 0.2s ease;
+}
+
+#menu-bottom li:hover {
+    bottom: -0.5em;
+    transition: bottom 0.2s ease;
+}
+
+#menu-bottom a {
+    height: 50px;
+    background: #FAF0E6;
+    text-decoration: none;
+    padding: 1em;
+    transition: background 0.2s ease;
+}
+
+#menu-bottom a:hover {
+    background: bisque;
+    color: #8B658B; 
+    transition: background 0.2s ease;
+    text-align: center;
+}
+#c, #search {
+    text-align: right;
+    font-size: smaller;
+}
+
+.inline div{
+    display: inline-block;
+}
+#search, #fsearch{
+    height: 30px;
+    width: 300px;
+    float: right;
+    position: relative;
+    top: -40px;
+}
+
+#contacts {
+    font-size: smaller;
+}
+#c{
+   position: relative;
+   width:20%; 
+   right:-75%;
+}
+#c input{
+    background: none;
+    border: none;
+    font-family: century gothic;
+    text-align: right;
+}
+#c #clock{
+    display: none;
+}
+#c .datetime #clock{
+    display: block;
+}
+#c .datetime #date{
+    display: none;
+}
+.hide-news #osn-text{
+    width: 94%;
+}
+.hide-news #news, .hide-news #admin{
+    width: 2%;
+    -webkit-writing-mode: vertical-rl;
+    transform: rotate(-180deg);
+}
+.hide-news #spisok-news{
+    display: none;
+}

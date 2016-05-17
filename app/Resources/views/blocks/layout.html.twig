@@ -1,0 +1,31 @@
+{% extends 'base.html.twig' %}
+{% block body %}
+    <div id="table">
+        <div id="header">
+            {% include 'blocks/header.html.twig' %}
+        </div>
+        <div id="content">
+            <div id="osn-text">
+                {% block content %}
+                {% endblock %}
+            </div>
+            <div id="news"> <a href="JavaScript:void();">Новости</a></div>
+            <div id="spisok-news">
+                <ul>
+                    <li><a href="{{ path('show_page', {url: 'news'}) }}">Утро по-итальянски</a></li>
+                    <li><a href="{{ path('show_page', {url: 'news'}) }}">Новинки в меню House</a></li>
+                    <li><a href="{{ path('show_page', {url: 'news'}) }}">Встреча любителей кофе</a></li>
+                </ul>
+            </div>
+            <div id="admin"> 
+                <a href="{{ path('admin_login')}}">Админка</a>
+                {% if app.user %}
+                    <p>Здравствуйте, {{ app.user.username }}</p>
+                    <a href="{{ path('admin_logout')}}">Выход</a>
+                {% endif %}
+            </div>
+        </div>
+        <div id="bottom">
+            {% include 'blocks/bottom.html.twig' %}
+        </div>
+{% endblock %}
